@@ -80,6 +80,7 @@
     - 顯示當前帳號的 `Accounts.defaultCalendarName`
     - 可選清單為當前 Company 的日曆定義
 - 型別定義入口
+- 組織管理入口
 - 主題切換入口
 - 登出入口
 
@@ -122,6 +123,10 @@
 
 - **開啟型別定義:**
     - 導航至 TypeDefinitionScreen
+
+- **開啟組織管理:**
+    - 導航至 ContainerManagementScreen
+    - 不需要先選取檢視
 
 - **切換主題:**
     - 介面在深淺兩種主題之間切換
