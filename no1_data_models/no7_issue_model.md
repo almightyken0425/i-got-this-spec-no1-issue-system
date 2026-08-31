@@ -52,6 +52,7 @@
   - `companyId`: String, UUID/GUID - Foreign Key to Companies, Not Null, Index, 租戶鍵
   - `issueTypeId`: String, UUID/GUID - Foreign Key to IssueTypeDefinitions, Not Null, Index, 所屬工單型別；選項清單隨工單型別各一份，與狀態流程同一層
   - `value`: String - Not Null, 選項值；與 `companyId`、`issueTypeId` 組成複合 Primary Key
+  - `sortOrder`: Number - Not Null, 同型別內從一開始的選項排列位置
   - `system`: Boolean - Not Null, 系統種子旗標；為真代表由最小流程種子帶入，仍可改可刪
 
 **與欄位系統的關係**: Status 與 Resolution 皆為選項值型別的內建欄位，兩欄分離。
@@ -108,11 +109,12 @@
   - `assets/definitions/StandardResolutionOptions.json`
 - **欄位:**
   - `value`: `String` - 選項值，值為已完成、不做之一
+  - `sortOrder`: `Number` - 從一開始的選項排列位置
 
-| value |
-|---|
-| 已完成 |
-| 不做 |
+| value | sortOrder |
+|---|---|
+| 已完成 | 1 |
+| 不做 | 2 |
 
 ---
 
